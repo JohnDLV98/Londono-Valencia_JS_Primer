@@ -1,17 +1,21 @@
-debugger
+
+
 let continuar = true
+let cont = 0
+
+debugger
 
 do{
 
-let ap = parseInt(prompt("elija una opcion: 1--> agregar un producto  2--> imprimir valor total "))
+let ap = parseInt(prompt("elija una opcion: ||  1 --> Facturar  ||  2 --> Total a Pagar del Domiciliario  ||  "))
 
 switch(ap){
     case 1:
-        agregarProducto()
+        facturar()
     break;
     
     case 2:
-        imprimirTotal(n)
+        cuentaDomi()
     break;
 
     default:
@@ -20,4 +24,5 @@ switch(ap){
 }
 
 continuar = confirm("Desea continuar?")
+
 }while(continuar)
