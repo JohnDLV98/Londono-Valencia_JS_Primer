@@ -99,6 +99,7 @@ body {
     flex-direction: column;
     gap: 18px;
 }
+
 .wrap {
     max-width: 1200px;
     margin: 0 auto;
