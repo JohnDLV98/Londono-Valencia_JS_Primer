@@ -6,7 +6,7 @@
 }
 
 html {
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 a {
@@ -51,8 +51,6 @@ main#principal {
 section#producto {
     grid-area: section;
 }
-
-
 
 header {
     display: flex;
@@ -105,11 +103,6 @@ body {
     margin: 0 auto;
 }
 
-/* .column-4{
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    gap: 1rem;
-} */
 .tarjeta-rest {
     display: flex;
     flex-direction: column;
@@ -204,16 +197,20 @@ main {
         height: 100vh;
         display: grid;
         grid-template-areas:
-            "header  header"
+            "header  header "
             "main    section";
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows:   .5fr 3fr ;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows:   .5fr 2fr 2fr ;
         gap: 3px;
     }
+    .seccion {        
+        align-items:flex-start;
+        justify-content:inherit;        
+    }
     
-    .card {
-        display: flex;
+    .card {        
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
 }
@@ -229,8 +226,9 @@ main {
             "main    section    section"
             "main    section    section"
             "main    section    section";
-        grid-template-columns: 1fr 3fr 3fr;
-        grid-template-rows: 1fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr;
         gap: 1px;
-    }
+    }    
+    
 }
